@@ -11,7 +11,7 @@ contract DeployVDMY is Script {
 
         VDMYtoken token = new VDMYtoken();
         uint8 decimals = token.decimals();
-        token.mint(owner, 10000000 * 10 * decimals);
+        token.mint(owner, 10000000 * 10 ** decimals);
 
         token.transferOwnership(owner);
 
